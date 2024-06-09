@@ -101,30 +101,30 @@ section .main .mian-content .main-image img {
   left: 15px;
   top: 30px;
 }
-section .main .social-icon{
+section .main .social-icon {
   position: absolute;
   top: 50%;
   left: 98%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   font-size: 19px;
 }
-section .main .social-icon i{
+section .main .social-icon i {
   margin: 8px 0;
   cursor: pointer;
   transition: 0.3s;
 }
-section .main .social-icon i:hover{
+section .main .social-icon i:hover {
   font-size: 1.5em;
   color: #c72092;
 }
-section .main .button{
+section .main .button {
   position: absolute;
   left: 6%;
   padding: 10px 20px;
   background: linear-gradient(to right, #c72092, #6c14de);
   border-radius: 10px;
 }
-section .main .button a{
+section .main .button a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -134,6 +134,146 @@ section .main .button i {
   margin-left: 5px;
   transition: 0.3s;
 }
-section .main .button a:hover i{
+section .main .button a:hover i {
   transform: translateX(6px);
+}
+.products {
+  margin-top: 55px;
+  height: 140vh;
+  padding: 25px 5px;
+  width: 100%;
+}
+.products h1 {
+  display: flex;
+  margin: 25px 0;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #c72092, #6c14de);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.products .box {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px 0;
+}
+.products .box .card {
+  width: 250px;
+  height: 480px;
+  box-shadow: 0 0 8px rgb(219, 9, 177);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.products .box .card .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products .box .card .image img {
+  width: 90%;
+  margin: 10px 0;
+  transition: 0.5s;
+}
+.products .box .card .small-card {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  margin: 8px 0;
+  /* transform: translateX(px); */
+  transition: 0.5s;
+  opacity: 0;
+}
+.products .box .card:hover .small-card {
+  transform: translateX(20px);
+  cursor: pointer;
+  opacity: 1;
+}
+.products .box .card .small-card i {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 2px 0;
+  line-height: 40px;
+  border: 2px solid #999;
+  transition: 0.5s;
+}
+.products .box .card .small-card i:hover {
+  background-color: #6c14de;
+  color: #fff;
+}
+.products .box .card .products-text h2 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.products .box .card .products-text p {
+  color: #919191;
+  line-height: 15px;
+  margin: 5px 0;
+}
+.products .box .card .products-text h3 {
+  margin: 5px 0;
+}
+.products .box .card .products-text .products-stars {
+  color: orange;
+  margin-bottom: 19px;
+  cursor: pointer;
+}
+.products .box .card .products-text .btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #c72092, #6c14de);
+  color: #fff;
+  transition: 0.5s;
+}
+.products .box .card .products-text .btn:hover {
+  opacity: 0.8;
+}
+.about {
+  width: 100;
+  height: 100vh;
+  padding: 35px 0;
+}
+.about h1 {
+  font-size: 60px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about h1 span {
+  background: linear-gradient(to right, #c72092, #6c14de);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 15px;
+}
+.about-main {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about .about-main .about-image {
+  display: flex;
+  margin-top: 50px;
+}
+.about .about-main .about-image .about-small-imag {
+  display: flex;
+  flex-direction: column;
+  top: 15px;
+}
+.about .about-main .about-image .about-small-image img {
+  height: 92px;
+  margin: 5px 0;
+  cursor: pointer;
+  background: linear-gradient(to right, #6c14de, #c72092);
+  display: block;
+  border-radius: 6px;
 }
