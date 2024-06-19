@@ -276,4 +276,57 @@ section .main .button a:hover i {
   background: linear-gradient(to right, #6c14de, #c72092);
   display: block;
   border-radius: 6px;
+  padding: 5px 5px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.6);
+  opacity: 0.3;
+  transition: all 1s;
+}
+.about .about-main .about-image .about-small-image img:hover{
+  opacity: 1;
+}
+.about .about-main .image-container{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.about .about-main .image-container img{
+  border: 3px solid #6c14de;
+  border-radius: 20px;
+  height: 430px;
+  padding: 30px;
+  box-shadow: 0 0  8px #6c14de;
+}
+
+.about .about-main  .about-text p{
+  background: linear-gradient(to right, #c72092, #6c14de);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 500px;
+  line-height: 22px;
+  width: 600px;
+  text-align: justify;
+  padding: 25px 30px;
+  border: 2px solid #c72092;
+  border-radius: 20px;
+height: 400px;
+align-content: center;
+margin-left: 25px;
+}
+.about .about-btn{
+  color: black;
+  background-color: none;
+  text-decoration: none;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+box-shadow:0 0 10px 5px #6c14de;
+padding: 10px 15px;
+border: 2px solid #6c14de;
+transition: 0.5s;
+}
+.about .about-btn:hover{
+  border: 2px solid transparent;
+  background-color: #c72092;
+  color: #fff;
 }
