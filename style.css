@@ -414,3 +414,20 @@ font-size: 22px;
   line-height: 22px;
   margin-top: 15px;
 }
+.services{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1050px;
+}
+.services h1{
+  font-weight: 800;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+.services h1 span{
+  margin-left: 15px;
+  background:linear-gradient(to left, #6c14de,#c72092);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
