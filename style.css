@@ -277,27 +277,27 @@ section .main .button a:hover i {
   display: block;
   border-radius: 6px;
   padding: 5px 5px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.6);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
   opacity: 0.3;
   transition: all 1s;
 }
-.about .about-main .about-image .about-small-image img:hover{
+.about .about-main .about-image .about-small-image img:hover {
   opacity: 1;
 }
-.about .about-main .image-container{
+.about .about-main .image-container {
   display: flex;
   padding: 10px;
   align-items: center;
 }
-.about .about-main .image-container img{
+.about .about-main .image-container img {
   border: 3px solid #6c14de;
   border-radius: 20px;
   height: 430px;
   padding: 30px;
-  box-shadow: 0 0  8px #6c14de;
+  box-shadow: 0 0 8px #6c14de;
 }
 
-.about .about-main  .about-text p{
+.about .about-main .about-text p {
   background: linear-gradient(to right, #c72092, #6c14de);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -308,25 +308,109 @@ section .main .button a:hover i {
   padding: 25px 30px;
   border: 2px solid #c72092;
   border-radius: 20px;
-height: 400px;
-align-content: center;
-margin-left: 25px;
+  height: 400px;
+  align-content: center;
+  margin-left: 25px;
 }
-.about .about-btn{
+.about .about-btn {
   color: black;
   background-color: none;
   text-decoration: none;
   position: relative;
   top: 10%;
   left: 50%;
-  transform: translate(-50%,-50%);
-box-shadow:0 0 10px 5px #6c14de;
-padding: 10px 15px;
-border: 2px solid #6c14de;
-transition: 0.5s;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 5px #6c14de;
+  padding: 10px 15px;
+  border: 2px solid #6c14de;
+  transition: 0.5s;
 }
-.about .about-btn:hover{
+.about .about-btn:hover {
   border: 2px solid transparent;
   background-color: #c72092;
   color: #fff;
+}
+.review {
+  margin-top: 110px;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+.review h1 {
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.review h1 span {
+  background: linear-gradient(to right, #c72092, #6c14de);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 15px;
+}
+.review .review-box{
+  width: 95%;
+  position: relative;
+  top: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.review .profile-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 15px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+.review .profile-image:hover{
+  transform: scale(1.2);
+}
+.review .profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.review .profile {
+  display: flex;
+  align-items: center;
+}
+.review .review-box .review-card {
+  width: 400px;
+  background: #f3f1f1;
+  padding: 20px 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin-top: 10px;
+}
+.review .review-box .review-card .card-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.review .review-box .review-card .card-top .profile .name{
+  margin-left: 20px;
+  line-height: 25px;
+}
+.review .review-box .review-card .card-top .profile .name b{
+font-size: 22px;
+}
+.review .review-box .review-card .card-top .profile .name .like i{
+  color: orange;
+  font-size: 15px;
+}
+.review .review-box .review-card .comment p{
+  text-align: justify;
+  line-height: 22px;
+  margin-top: 15px;
 }
